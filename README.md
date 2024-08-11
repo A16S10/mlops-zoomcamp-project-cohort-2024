@@ -11,14 +11,14 @@ Here are more details about all the submission topics
 
 ## 1. Basic jupyter notebook 
 [salary-prediction.ipynb](./salary-prediction.ipynb) is simple salary prediction jupyter notebook.
-It will parse [employee_data.csv](./employee_data.csv) via 'pandas' and use Linear Regression model from 'scikit-learn'.
-It will also plot simple histogram of salary distribution using 'matplotlib'.
+It will parse [employee_data.csv](./employee_data.csv) via `pandas` and use Linear Regression model from `scikit-learn`.
+It will also plot simple histogram of salary distribution using `matplotlib`.
 
 ## 2. Experiment Tracking via mlflow
 Switch to folder [experiment_tracking](./experiment_tracking)
-It has some prerun experiments 
-You can simply start 
-Now you can run and/or observe: 
+It has some pre-run experiments. you can simply observe them.
+
+Or You can run these experiments via foll. python scripts. 
 ### 1. Simple single 'RandomForestRegressor' experiment 
 Run train.py
 ![single-expt.png](./pictures/single-expt.png)
@@ -30,10 +30,10 @@ Run register_model.py
 ![best-model-expt.png](./pictures/best-model-expt.png)
 ![best-model-registered.png](./pictures/best-model-registered.png)
 
-## 3. Pipeline orchestartion via mage
+## 3. Pipeline orchestration via mage
 Pipeline code is in folder [model_training_pipeline](./model_training_pipeline)
 
-Here we use 'mage' to set pipeline with foll. stages
+Here we use `mage` to set pipeline with foll. stages
 ### 1. ingest (Data loader)
 Read employee data csv file
 ### 2. train_lr (Transformer)
@@ -56,17 +56,23 @@ Switch to folder [deploy_model](./deploy_model)
 
 Pull docker container from public docker image at github registry
 
+```bash
 docker pull ghcr.io/nilarte/simple_salary_prediction
+```
 
 Note: You will need docker login to ghcr.io
 
-ex: docker login ghcr.io -u Your_Username
+ex:
+```bash
+docker login ghcr.io -u Your_Username
+```
 
 Or simply build local image using Dockerfile
 
 Then run:
-
+```bash
 docker run -v $(pwd)/test1.csv:/app/test1.csv ghcr.io/nilarte/simple_salary_prediction test1.csv
+```
 
 ![deploy-model.png](./pictures/deploy-model.png)
 
