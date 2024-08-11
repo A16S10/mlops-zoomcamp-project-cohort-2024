@@ -1,8 +1,10 @@
 import pandas as pd
 import pickle
 import numpy as np
+import sys
 
-input_file = f'employee_data.csv'
+input_file = sys.argv[1]
+#input_file = f'employee_data.csv'
 output_file = f'output/predicted_data.csv'
 
 
@@ -28,5 +30,6 @@ print('predicted mean duration:', y_pred.mean())
 
 
 df_result = pd.DataFrame()
+df_result['ID'] = df['ID']
 df_result['predicted_salary'] = y_pred
 print (df_result)
