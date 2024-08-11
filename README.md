@@ -10,8 +10,8 @@ Dataset credit: https://www.kaggle.com/datasets/abhayayare/employee-data-simulat
 Here are more details about all the submission topics
 
 ## 1. Basic jupyter notebook 
-salary-prection.ipynb is simple salary prediction jupyter notebook
-It will parse employee_data.csv via 'pandas' and use Linear Regression model from 'scikit-learn'
+[salary-prediction.ipynb](./salary-prection.ipynb) is simple salary prediction jupyter notebook
+It will parse [employee_data.csv](./employee_data.csv) via 'pandas' and use Linear Regression model from 'scikit-learn'
 It will also plot simple histogram of salary distribution using 'matplotlib'
 
 ## 2. 
