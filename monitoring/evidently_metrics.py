@@ -29,17 +29,17 @@ create table dummy_metrics(
 	prediction_drift float,
 	num_drifted_columns integer,
 	share_missing_values float,
-	median_fare_amount float,
+	median_experience float,
 	rmse float
 )
 """
 
 reference_data = pd.read_csv('data/reference.csv')
-with open('models/lin_reg.bin', 'rb') as f_in:
-	model = joblib.load(f_in)
+#with open('models/lin_reg.bin', 'rb') as f_in:
+#	model = joblib.load(f_in)
 	
-#with open('../deploy_model/models/lin_reg.bin', 'rb') as file:
-#    dv, lr = pickle.load(file)
+with open('../deploy_model/models/lin_reg.bin', 'rb') as file:
+    dv, lr = pickle.load(file)
 	
 raw_data = pd.read_csv('employee_data_with_month.csv')
 
@@ -60,7 +60,7 @@ report = Report(metrics=[
     DatasetDriftMetric(),
     DatasetMissingValuesMetric(),
     RegressionQualityMetric(),
-    ColumnQuantileMetric(column_name="fare_amount", quantile=0.5)
+    ColumnQuantileMetric(column_name="Experience (Years)", quantile=0.5)
 ])
 
 #@task
@@ -79,12 +79,13 @@ def calculate_metrics_postgresql(curr, month):
 	
     print(current_data)
     cur_dicts = current_data[cat_features + num_features].fillna(0).to_dict(orient='records')
-    #X_cur = dv.transform(cur_dicts)
+    X_cur = dv.transform(cur_dicts)
 	
-    current_data['prediction'] = model.predict(current_data[num_features + cat_features].fillna(0))
-    #y_pred = lr.predict(X_cur)
-    #print(y_pred)
     
+    #current_data['prediction'] = model.predict(current_data[num_features + cat_features].fillna(0))
+    y_pred = lr.predict(X_cur)
+    print(y_pred)
+    current_data['prediction'] = y_pred
     report.run(reference_data = reference_data, current_data = current_data,
         column_mapping=column_mapping)
 
@@ -97,7 +98,7 @@ def calculate_metrics_postgresql(curr, month):
     rmse = result['metrics'][3]['result']['current']['rmse']
 
     curr.execute(
-        "insert into dummy_metrics(month, prediction_drift, num_drifted_columns, share_missing_values, median_fare_amount, rmse) values (%s, %s, %s, %s, %s, %s)",
+        "insert into dummy_metrics(month, prediction_drift, num_drifted_columns, share_missing_values, median_experience, rmse) values (%s, %s, %s, %s, %s, %s)",
         (month, prediction_drift, num_drifted_columns, share_missing_values, median_experience, rmse)
     )
 

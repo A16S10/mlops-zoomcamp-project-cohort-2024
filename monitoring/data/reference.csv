@@ -1,201 +1,201 @@
-ID,Gender,Experience (Years),Position,Salary,Month
-201,F,7,IT Security Analyst,157825,Mar
-202,M,11,DevOps Engineer,196310,Mar
-203,F,11,Cloud Solutions Architect,150681,Mar
-204,F,14,Web Developer,148073,Mar
-205,F,19,IT Security Analyst,154443,Mar
-206,M,19,Web Developer,119320,Mar
-207,F,9,IT Security Analyst,142031,Mar
-208,F,0,IT Manager,149762,Mar
-209,F,10,Web Developer,143649,Mar
-210,M,11,Database Administrator (DBA),93165,Mar
-211,F,4,Web Developer,68000,Mar
-212,F,6,IT Support Specialist,78006,Mar
-213,M,6,Systems Administrator,127764,Mar
-214,M,8,IT Support Specialist,110734,Mar
-215,M,9,Network Administrator,85199,Mar
-216,M,11,Web Developer,114608,Mar
-217,M,14,IT Security Analyst,183382,Mar
-218,F,14,Web Developer,162487,Mar
-219,F,11,IT Security Analyst,149970,Mar
-220,M,4,Database Administrator (DBA),94797,Mar
-221,M,3,Software Engineer,100026,Mar
-222,F,0,Software Engineer,103124,Mar
-223,M,9,Systems Administrator,129155,Mar
-224,M,8,Systems Administrator,131847,Mar
-225,M,18,Web Developer,152404,Mar
-226,F,9,Systems Administrator,137897,Mar
-227,M,20,DevOps Engineer,218258,Mar
-228,F,14,Systems Analyst,186294,Mar
-229,F,18,Software Engineer,190752,Mar
-230,M,0,Systems Administrator,71389,Mar
-231,M,3,Web Developer,94989,Mar
-232,M,14,IT Manager,204549,Mar
-233,F,19,IT Support Specialist,136355,Mar
-234,F,4,Web Developer,96910,Mar
-235,M,8,DevOps Engineer,150620,Mar
-236,M,0,IT Support Specialist,70195,Mar
-237,F,5,Systems Administrator,93860,Mar
-238,M,17,Software Engineer,150031,Mar
-239,F,11,Database Administrator (DBA),97981,Mar
-240,F,14,IT Support Specialist,91480,Mar
-241,M,5,Systems Administrator,73047,Mar
-242,F,19,Systems Administrator,178265,Mar
-243,F,0,Web Developer,62301,Mar
-244,M,3,Systems Administrator,108998,Mar
-245,M,13,Web Developer,94615,Mar
-246,F,2,Systems Analyst,72006,Mar
-247,M,17,DevOps Engineer,177180,Mar
-248,F,3,IT Manager,158031,Mar
-249,M,10,Systems Administrator,98814,Mar
-250,F,19,Systems Administrator,130445,Mar
-251,F,7,Network Administrator,120406,Mar
-252,F,2,Systems Administrator,67127,Mar
-253,M,16,Software Engineer,174612,Mar
-254,F,4,Software Engineer,141261,Mar
-255,M,6,Database Administrator (DBA),116853,Mar
-256,M,1,Systems Analyst,93558,Mar
-257,M,9,IT Security Analyst,148118,Mar
-258,F,17,Software Engineer,175368,Mar
-259,F,3,DevOps Engineer,148634,Mar
-260,M,14,Cloud Solutions Architect,252949,Mar
-261,F,0,Database Administrator (DBA),90721,Mar
-262,M,11,DevOps Engineer,196839,Mar
-263,F,16,Cloud Solutions Architect,180331,Mar
-264,F,6,Software Engineer,92927,Mar
-265,M,10,Network Administrator,111025,Mar
-266,M,16,IT Manager,172094,Mar
-267,F,3,IT Manager,156738,Mar
-268,M,5,DevOps Engineer,157380,Mar
-269,M,9,Systems Analyst,132950,Mar
-270,F,5,Web Developer,70610,Mar
-271,F,7,IT Manager,115263,Mar
-272,M,1,Systems Analyst,79944,Mar
-273,M,13,Software Engineer,161927,Mar
-274,M,19,Database Administrator (DBA),132311,Mar
-275,M,19,Systems Administrator,116574,Mar
-276,M,13,Network Administrator,134437,Mar
-277,M,10,Database Administrator (DBA),166104,Mar
-278,M,11,Web Developer,100091,Mar
-279,F,0,Systems Analyst,102541,Mar
-280,F,14,Systems Administrator,125521,Mar
-281,M,5,Network Administrator,91842,Mar
-282,M,2,Systems Analyst,79431,Mar
-283,F,12,Web Developer,112825,Mar
-284,F,10,DevOps Engineer,130002,Mar
-285,M,6,Software Engineer,133508,Mar
-286,M,11,DevOps Engineer,180261,Mar
-287,F,20,IT Manager,190192,Mar
-288,F,10,Database Administrator (DBA),128220,Mar
-289,F,7,IT Support Specialist,106666,Mar
-290,M,7,IT Support Specialist,97317,Mar
-291,M,0,IT Security Analyst,70591,Mar
-292,F,15,Database Administrator (DBA),187353,Mar
-293,F,8,Web Developer,131530,Mar
-294,M,13,Database Administrator (DBA),108040,Mar
-295,F,7,DevOps Engineer,147688,Mar
-296,F,4,IT Support Specialist,74688,Mar
-297,F,3,Systems Analyst,83147,Mar
-298,M,18,Database Administrator (DBA),139000,Mar
-299,M,16,Web Developer,114764,Mar
-300,M,4,IT Security Analyst,125282,Mar
-301,M,10,IT Manager,164340,Apr
-302,F,19,Database Administrator (DBA),121293,Apr
-303,F,8,Web Developer,92514,Apr
-304,F,10,IT Manager,200409,Apr
-305,M,15,Systems Analyst,178571,Apr
-306,F,6,Software Engineer,136900,Apr
-307,M,0,Web Developer,64736,Apr
-308,M,15,DevOps Engineer,124153,Apr
-309,F,7,Database Administrator (DBA),125514,Apr
-310,M,12,IT Security Analyst,152934,Apr
-311,M,16,Software Engineer,181774,Apr
-312,F,18,Network Administrator,148410,Apr
-313,F,16,Systems Analyst,183411,Apr
-314,F,1,Software Engineer,97706,Apr
-315,M,10,IT Manager,150802,Apr
-316,M,5,Web Developer,118482,Apr
-317,F,20,Systems Analyst,206324,Apr
-318,M,18,Cloud Solutions Architect,242808,Apr
-319,M,10,Web Developer,128179,Apr
-320,F,10,IT Manager,193399,Apr
-321,M,2,Cloud Solutions Architect,92288,Apr
-322,F,18,Systems Administrator,130058,Apr
-323,F,15,Database Administrator (DBA),106204,Apr
-324,M,0,IT Security Analyst,114736,Apr
-325,F,11,Systems Analyst,111316,Apr
-326,M,2,IT Manager,103746,Apr
-327,F,15,DevOps Engineer,211620,Apr
-328,F,14,Web Developer,168536,Apr
-329,F,9,DevOps Engineer,159630,Apr
-330,M,17,Systems Analyst,188959,Apr
-331,M,19,Network Administrator,111362,Apr
-332,M,20,Database Administrator (DBA),214420,Apr
-333,M,20,DevOps Engineer,205418,Apr
-334,M,20,Systems Analyst,149160,Apr
-335,M,2,Web Developer,87875,Apr
-336,F,3,DevOps Engineer,131757,Apr
-337,F,6,IT Support Specialist,84510,Apr
-338,F,16,IT Support Specialist,88993,Apr
-339,M,4,Systems Administrator,98992,Apr
-340,M,11,Cloud Solutions Architect,142348,Apr
-341,F,9,Cloud Solutions Architect,126811,Apr
-342,M,12,Web Developer,81593,Apr
-343,M,17,Systems Analyst,112487,Apr
-344,F,6,Software Engineer,114791,Apr
-345,F,17,Systems Administrator,127533,Apr
-346,M,4,Software Engineer,107647,Apr
-347,F,12,Web Developer,147836,Apr
-348,F,19,DevOps Engineer,242819,Apr
-349,M,9,Systems Administrator,115769,Apr
-350,M,16,Web Developer,93819,Apr
-351,M,19,Cloud Solutions Architect,229450,Apr
-352,M,17,Database Administrator (DBA),163651,Apr
-353,F,12,Database Administrator (DBA),156865,Apr
-354,M,6,IT Security Analyst,154128,Apr
-355,F,17,Systems Analyst,113678,Apr
-356,F,9,DevOps Engineer,167738,Apr
-357,F,10,Cloud Solutions Architect,197467,Apr
-358,M,16,IT Manager,174920,Apr
-359,M,5,Software Engineer,76006,Apr
-360,M,4,Network Administrator,94624,Apr
-361,F,20,Network Administrator,174498,Apr
-362,F,18,DevOps Engineer,211696,Apr
-363,F,13,IT Support Specialist,100638,Apr
-364,F,12,DevOps Engineer,200228,Apr
-365,F,2,IT Security Analyst,111043,Apr
-366,M,1,Systems Administrator,78440,Apr
-367,F,10,Web Developer,81706,Apr
-368,M,15,Network Administrator,118781,Apr
-369,F,16,DevOps Engineer,157975,Apr
-370,M,13,Systems Administrator,159733,Apr
-371,M,1,Network Administrator,61605,Apr
-372,M,6,Systems Administrator,129226,Apr
-373,F,13,Systems Analyst,162457,Apr
-374,M,12,Network Administrator,116966,Apr
-375,M,13,Cloud Solutions Architect,167168,Apr
-376,M,3,Database Administrator (DBA),105768,Apr
-377,M,1,Cloud Solutions Architect,104113,Apr
-378,M,11,IT Manager,159942,Apr
-379,M,20,IT Manager,190956,Apr
-380,F,16,Systems Analyst,149281,Apr
-381,F,1,IT Security Analyst,110686,Apr
-382,F,0,IT Manager,105758,Apr
-383,M,10,Web Developer,91542,Apr
-384,F,14,Network Administrator,121650,Apr
-385,F,14,Systems Administrator,108497,Apr
-386,F,3,Systems Analyst,98196,Apr
-387,F,3,Web Developer,102394,Apr
-388,F,1,Network Administrator,103637,Apr
-389,F,4,Systems Administrator,102856,Apr
-390,F,9,IT Security Analyst,107445,Apr
-391,M,11,IT Support Specialist,66076,Apr
-392,F,3,Cloud Solutions Architect,159870,Apr
-393,F,1,Network Administrator,79333,Apr
-394,M,2,Software Engineer,91029,Apr
-395,M,3,IT Support Specialist,54938,Apr
-396,F,19,Cloud Solutions Architect,236045,Apr
-397,F,20,Web Developer,182770,Apr
-398,F,9,Network Administrator,85550,Apr
-399,M,18,Database Administrator (DBA),129996,Apr
-400,F,11,IT Security Analyst,169058,Apr
+,ID,Gender,Experience (Years),Position,Salary,Month,prediction
+200,201,F,7,IT Security Analyst,157825,Mar,114161.04298024427
+201,202,M,11,DevOps Engineer,196310,Mar,127901.32095237702
+202,203,F,11,Cloud Solutions Architect,150681,Mar,143872.6648059857
+203,204,F,14,Web Developer,148073,Mar,94669.14390801013
+204,205,F,19,IT Security Analyst,154443,Mar,119974.11487849898
+205,206,M,19,Web Developer,119320,Mar,120371.07459819753
+206,207,F,9,IT Security Analyst,142031,Mar,110212.80264284358
+207,208,F,0,IT Manager,149762,Mar,108378.6964810662
+208,209,F,10,Web Developer,143649,Mar,123922.35521589966
+209,210,M,11,Database Administrator (DBA),93165,Mar,159730.27975701494
+210,211,F,4,Web Developer,68000,Mar,150092.8686009031
+211,212,F,6,IT Support Specialist,78006,Mar,108378.6964810662
+212,213,M,6,Systems Administrator,127764,Mar,163816.72532600205
+213,214,M,8,IT Support Specialist,110734,Mar,142543.28930586012
+214,215,M,9,Network Administrator,85199,Mar,164610.93587484263
+215,216,M,11,Web Developer,114608,Mar,150740.98211557063
+216,217,M,14,IT Security Analyst,183382,Mar,106815.0770551213
+217,218,F,14,Web Developer,162487,Mar,163816.72532600205
+218,219,F,11,IT Security Analyst,149970,Mar,107716.76743647165
+219,220,M,4,Database Administrator (DBA),94797,Mar,115921.79771040674
+220,221,M,3,Software Engineer,100026,Mar,154973.52471873083
+221,222,F,0,Software Engineer,103124,Mar,176045.95308605948
+222,223,M,9,Systems Administrator,129155,Mar,87539.55138479087
+223,224,M,8,Systems Administrator,131847,Mar,193894.87258180886
+224,225,M,18,Web Developer,152404,Mar,71564.5134199205
+225,226,F,9,Systems Administrator,137897,Mar,179252.90422832576
+226,227,M,20,DevOps Engineer,218258,Mar,154849.62363918725
+227,228,F,14,Systems Analyst,186294,Mar,172676.34718030712
+228,229,F,18,Software Engineer,190752,Mar,158952.49045520817
+229,230,M,0,Systems Administrator,71389,Mar,180926.6092038872
+230,231,M,3,Web Developer,94989,Mar,126337.70152643212
+231,232,M,14,IT Manager,204549,Mar,132781.97707020474
+232,233,F,19,IT Support Specialist,136355,Mar,121060.73553170808
+233,234,F,4,Web Developer,96910,Mar,101934.42093729359
+234,235,M,8,DevOps Engineer,150620,Mar,124787.89763041423
+235,236,M,0,IT Support Specialist,70195,Mar,139305.96490435378
+236,237,F,5,Systems Administrator,93860,Mar,159847.70277085606
+237,238,M,17,Software Engineer,150031,Mar,113387.03512966726
+238,239,F,11,Database Administrator (DBA),97981,Mar,53633.24026347058
+239,240,F,14,IT Support Specialist,91480,Mar,105248.85191206961
+240,241,M,5,Systems Administrator,73047,Mar,140979.66987991522
+241,242,F,19,Systems Administrator,178265,Mar,94585.84929506386
+242,243,F,0,Web Developer,62301,Mar,150092.8686009031
+243,244,M,3,Systems Administrator,108998,Mar,80027.17555452701
+244,245,M,13,Web Developer,94615,Mar,135326.99916787643
+245,246,F,2,Systems Analyst,72006,Mar,106166.96354045377
+246,247,M,17,DevOps Engineer,177180,Mar,92420.20750261858
+247,248,F,3,IT Manager,158031,Mar,92420.20750261858
+248,249,M,10,Systems Administrator,98814,Mar,121060.73553170808
+249,250,F,19,Systems Administrator,130445,Mar,163709.2454934923
+250,251,F,7,Network Administrator,120406,Mar,120808.93189393687
+251,252,F,2,Systems Administrator,67127,Mar,115093.45876067129
+252,253,M,16,Software Engineer,174612,Mar,217396.46278959705
+253,254,F,4,Software Engineer,141261,Mar,129668.55374824193
+254,255,M,6,Database Administrator (DBA),116853,Mar,189014.21646398117
+255,256,M,1,Systems Analyst,93558,Mar,158117.67343977027
+256,257,M,9,IT Security Analyst,148118,Mar,179252.90422832576
+257,258,F,17,Software Engineer,175368,Mar,161403.98473257638
+258,259,F,3,DevOps Engineer,148634,Mar,134425.3087865261
+259,260,M,14,Cloud Solutions Architect,252949,Mar,92962.7202770061
+260,261,F,0,Database Administrator (DBA),90721,Mar,123869.78600203009
+261,262,M,11,DevOps Engineer,196839,Mar,217396.46278959705
+262,263,F,16,Cloud Solutions Architect,180331,Mar,101286.30742262607
+263,264,F,6,Software Engineer,92927,Mar,141862.5683952511
+264,265,M,10,Network Administrator,111025,Mar,57612.20599994794
+265,266,M,16,IT Manager,172094,Mar,181588.53824848175
+266,267,F,3,IT Manager,156738,Mar,178351.2138469754
+267,268,M,5,DevOps Engineer,157380,Mar,97843.37639483379
+268,269,M,9,Systems Analyst,132950,Mar,97053.7648194659
+269,270,F,5,Web Developer,70610,Mar,66220.02421648179
+270,271,F,7,IT Manager,115263,Mar,205311.09792701126
+271,272,M,1,Systems Analyst,79944,Mar,136981.91227742337
+272,273,M,13,Software Engineer,161927,Mar,187370.88474765982
+273,274,M,19,Database Administrator (DBA),132311,Mar,92420.20750261858
+274,275,M,19,Systems Administrator,116574,Mar,178458.69367948518
+275,276,M,13,Network Administrator,134437,Mar,122339.94392394027
+276,277,M,10,Database Administrator (DBA),166104,Mar,164728.35888868378
+277,278,M,11,Web Developer,100091,Mar,108378.6964810662
+278,279,F,0,Systems Analyst,102541,Mar,175125.47083869466
+279,280,F,14,Systems Administrator,125521,Mar,91087.13789123132
+280,281,M,5,Network Administrator,91842,Mar,115490.41848036983
+281,282,M,2,Systems Analyst,79431,Mar,87539.55138479087
+282,283,F,12,Web Developer,112825,Mar,161385.1928665619
+283,284,F,10,DevOps Engineer,130002,Mar,154138.70770329292
+284,285,M,6,Software Engineer,133508,Mar,81325.82565557591
+285,286,M,11,DevOps Engineer,180261,Mar,131199.56577824533
+286,287,F,20,IT Manager,190192,Mar,43871.92802781517
+287,288,F,10,Database Administrator (DBA),128220,Mar,88194.14296516083
+288,289,F,7,IT Support Specialist,106666,Mar,143392.4104733409
+289,290,M,7,IT Support Specialist,97317,Mar,149174.75697251895
+290,291,M,0,IT Security Analyst,70591,Mar,75543.47915639787
+291,292,F,15,Database Administrator (DBA),187353,Mar,133714.39285063173
+292,293,F,8,Web Developer,131530,Mar,97053.7648194659
+293,294,M,13,Database Administrator (DBA),108040,Mar,165382.95046905373
+294,295,F,7,DevOps Engineer,147688,Mar,122358.73578995475
+295,296,F,4,IT Support Specialist,74688,Mar,65385.2072010439
+296,297,F,3,Systems Analyst,83147,Mar,189014.21646398117
+297,298,M,18,Database Administrator (DBA),139000,Mar,92678.4892060922
+298,299,M,16,Web Developer,114764,Mar,149067.2771400092
+299,300,M,4,IT Security Analyst,125282,Mar,136080.22189607302
+300,301,M,10,IT Manager,164340,Apr,67373.51823560335
+301,302,F,19,Database Administrator (DBA),121293,Apr,103498.04036323851
+302,303,F,8,Web Developer,92514,Apr,58513.896381298284
+303,304,F,10,IT Manager,200409,Apr,160483.50248521156
+304,305,M,15,Systems Analyst,178571,Apr,157312.94019011658
+305,306,F,6,Software Engineer,136900,Apr,104347.16153071927
+306,307,M,0,Web Developer,64736,Apr,116576.3892907767
+307,308,M,15,DevOps Engineer,124153,Apr,202754.49443611392
+308,309,F,7,Database Administrator (DBA),125514,Apr,101279.82935692364
+309,310,M,12,IT Security Analyst,152934,Apr,158034.37882682402
+310,311,M,16,Software Engineer,181774,Apr,127127.31310180001
+311,312,F,18,Network Administrator,148410,Apr,48752.584145642875
+312,313,F,16,Systems Analyst,183411,Apr,144186.62102218147
+313,314,F,1,Software Engineer,97706,Apr,175391.36150568954
+314,315,M,10,IT Manager,150802,Apr,98745.06677618415
+315,316,M,5,Web Developer,118482,Apr,222277.11890742474
+316,317,F,20,Systems Analyst,206324,Apr,176707.88213065406
+317,318,M,18,Cloud Solutions Architect,242808,Apr,66286.89758239425
+318,319,M,10,Web Developer,128179,Apr,149174.75697251895
+319,320,F,10,IT Manager,193399,Apr,177609.5725120044
+320,321,M,2,Cloud Solutions Architect,92288,Apr,218298.1531709474
+321,322,F,18,Systems Administrator,130058,Apr,124787.89763041423
+322,323,F,15,Database Administrator (DBA),106204,Apr,137790.31571880577
+323,324,M,0,IT Security Analyst,114736,Apr,179370.32724216688
+324,325,F,11,Systems Analyst,111316,Apr,136346.1125630679
+325,326,M,2,IT Manager,103746,Apr,131723.73814871383
+326,327,F,15,DevOps Engineer,211620,Apr,107604.6886304892
+327,328,F,14,Web Developer,168536,Apr,96657.45494256957
+328,329,F,9,DevOps Engineer,159630,Apr,132909.65960097808
+329,330,M,17,Systems Analyst,188959,Apr,112201.11367740302
+330,331,M,19,Network Administrator,111362,Apr,161291.90592659393
+331,332,M,20,Database Administrator (DBA),214420,Apr,77134.83047125874
+332,333,M,20,DevOps Engineer,205418,Apr,75543.47915639787
+333,334,M,20,Systems Analyst,149160,Apr,129230.6964525026
+334,335,M,2,Web Developer,87875,Apr,61803.2011842651
+335,336,F,3,DevOps Engineer,131757,Apr,100368.19579424191
+336,337,F,6,IT Support Specialist,84510,Apr,88983.75454052874
+337,338,F,16,IT Support Specialist,88993,Apr,121060.73553170808
+338,339,M,4,Systems Administrator,98992,Apr,127220.60004176798
+339,340,M,11,Cloud Solutions Architect,142348,Apr,138511.7543555132
+340,341,F,9,Cloud Solutions Architect,126811,Apr,75146.51943669931
+341,342,M,12,Web Developer,81593,Apr,111695.733172949
+342,343,M,17,Systems Analyst,112487,Apr,89705.19317723616
+343,344,F,6,Software Engineer,114791,Apr,101286.30742262607
+344,345,F,17,Systems Administrator,127533,Apr,175125.47083869466
+345,346,M,4,Software Engineer,107647,Apr,135326.99916787643
+346,347,F,12,Web Developer,147836,Apr,184250.9833599946
+347,348,F,19,DevOps Engineer,242819,Apr,48752.584145642875
+348,349,M,9,Systems Administrator,115769,Apr,175933.87428007706
+349,350,M,16,Web Developer,93819,Apr,125683.10994606215
+350,351,M,19,Cloud Solutions Architect,229450,Apr,165382.95046905373
+351,352,M,17,Database Administrator (DBA),163651,Apr,191349.85048413716
+352,353,F,12,Database Administrator (DBA),156865,Apr,153153.7227089963
+353,354,M,6,IT Security Analyst,154128,Apr,130563.76606388985
+354,355,F,17,Systems Analyst,113678,Apr,130563.76606388985
+355,356,F,9,DevOps Engineer,167738,Apr,122246.65698397232
+356,357,F,10,Cloud Solutions Architect,197467,Apr,87292.45258381049
+357,358,M,16,IT Manager,174920,Apr,86896.14270691416
+358,359,M,5,Software Engineer,76006,Apr,167848.260276349
+359,360,M,4,Network Administrator,94624,Apr,88983.75454052874
+360,361,F,20,Network Administrator,174498,Apr,126584.8003274125
+361,362,F,18,DevOps Engineer,211696,Apr,217396.46278959705
+362,363,F,13,IT Support Specialist,100638,Apr,85742.6486877926
+363,364,F,12,DevOps Engineer,200228,Apr,153153.7227089963
+364,365,F,2,IT Security Analyst,111043,Apr,129668.55374824193
+365,366,M,1,Systems Administrator,78440,Apr,164610.93587484263
+366,367,F,10,Web Developer,81706,Apr,142670.97183663346
+367,368,M,15,Network Administrator,118781,Apr,131199.56577824533
+368,369,F,16,DevOps Engineer,157975,Apr,166284.6408504041
+369,370,M,13,Systems Administrator,159733,Apr,166265.84898438962
+370,371,M,1,Network Administrator,61605,Apr,158952.49045520817
+371,372,M,6,Systems Administrator,129226,Apr,110609.76236254214
+372,373,F,13,Systems Analyst,162457,Apr,100451.49040718818
+373,374,M,12,Network Administrator,116966,Apr,112201.11367740302
+374,375,M,13,Cloud Solutions Architect,167168,Apr,136981.91227742337
+375,376,M,3,Database Administrator (DBA),105768,Apr,141862.5683952511
+376,377,M,1,Cloud Solutions Architect,104113,Apr,111695.733172949
+377,378,M,11,IT Manager,159942,Apr,138992.008688158
+378,379,M,20,IT Manager,190956,Apr,184905.57494036455
+379,380,F,16,Systems Analyst,149281,Apr,123953.08061497635
+380,381,F,1,IT Security Analyst,110686,Apr,170510.70538786182
+381,382,F,0,IT Manager,105758,Apr,106418.76717822497
+382,383,M,10,Web Developer,91542,Apr,171146.5051022173
+383,384,F,14,Network Administrator,121650,Apr,105248.85191206961
+384,385,F,14,Systems Administrator,108497,Apr,124854.7709963267
+385,386,F,3,Systems Analyst,98196,Apr,137790.31571880577
+386,387,F,3,Web Developer,102394,Apr,97053.7648194659
+387,388,F,1,Network Administrator,103637,Apr,84103.09842270103
+388,389,F,4,Systems Administrator,102856,Apr,188112.52608263082
+389,390,F,9,IT Security Analyst,107445,Apr,114588.7280990195
+390,391,M,11,IT Support Specialist,66076,Apr,182490.2286298321
+391,392,F,3,Cloud Solutions Architect,159870,Apr,123869.78600203009
+392,393,F,1,Network Administrator,79333,Apr,156523.32861474867
+393,394,M,2,Software Engineer,91029,Apr,95066.10362770868
+394,395,M,3,IT Support Specialist,54938,Apr,171954.9085435997
+395,396,F,19,Cloud Solutions Architect,236045,Apr,146107.4247987233
+396,397,F,20,Web Developer,182770,Apr,171165.2969682318
+397,398,F,9,Network Administrator,85550,Apr,134616.0832319821
+398,399,M,18,Database Administrator (DBA),129996,Apr,122339.94392394027
+399,400,F,11,IT Security Analyst,169058,Apr,137662.63318803243
