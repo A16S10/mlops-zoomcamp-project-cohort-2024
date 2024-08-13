@@ -25,7 +25,7 @@ rand = random.Random()
 create_table_statement = """
 drop table if exists dummy_metrics;
 create table dummy_metrics(
-	month varchar(3),
+	time timestamp,
 	prediction_drift float,
 	num_drifted_columns integer,
 	share_missing_values float,
@@ -63,6 +63,21 @@ report = Report(metrics=[
     ColumnQuantileMetric(column_name="Experience (Years)", quantile=0.5)
 ])
 
+month_mapping = {
+    "Jan": 1,
+    "Feb": 2,
+    "Mar": 3,
+    "Apr": 4,
+    "May": 5,
+    "Jun": 6,
+    "Jul": 7,
+    "Aug": 8,
+    "Sep": 9,
+    "Oct": 10,
+    "Nov": 11,
+    "Dec": 12
+}
+
 #@task
 def prep_db():
     with psycopg.connect("host=localhost port=5432 user=postgres password=example", autocommit=True) as conn:
@@ -97,9 +112,13 @@ def calculate_metrics_postgresql(curr, month):
     median_experience = result['metrics'][4]['result']['current']['value']
     rmse = result['metrics'][3]['result']['current']['rmse']
 
+    month_num = month_mapping.get(month.capitalize())
+	# Create the datetime object for the first day of the month in 2024
+    date_time_of_month = datetime.datetime(2024, month_num, 1)
+	
     curr.execute(
-        "insert into dummy_metrics(month, prediction_drift, num_drifted_columns, share_missing_values, median_experience, rmse) values (%s, %s, %s, %s, %s, %s)",
-        (month, prediction_drift, num_drifted_columns, share_missing_values, median_experience, rmse)
+        "insert into dummy_metrics(time, prediction_drift, num_drifted_columns, share_missing_values, median_experience, rmse) values (%s, %s, %s, %s, %s, %s)",
+        (date_time_of_month, prediction_drift, num_drifted_columns, share_missing_values, median_experience, rmse)
     )
 
 #@flow
