@@ -84,19 +84,55 @@ So user can run simpler command.
 Try webservice deployment
 
 ## 5. Monitoring
-Here we 
+Here we monitor key performance metrics of our employee salary predictionusing `Evidently`, 
+including prediction drift, rmse and median employee experince . The results are visualized through `Grafana`.
 
-postgres=# \l
-                                 List of databases
-   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges
------------+----------+----------+------------+------------+-----------------------
- postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 |
- template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
-           |          |          |            |            | postgres=CTc/postgres
- template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
-           |          |          |            |            | postgres=CTc/postgres
- test      | postgres | UTF8     | en_US.utf8 | en_US.utf8 |
+Switch to folder [monitoring](./monitoring)
+Here we have [baseline_model_employee_salary_data.ipynb](./monitoring/baseline_model_employee_salary_data.ipynb) 
+
+It will log the following Evidently metrics inline in the notebook
+
+ColumnDriftMetric(For column "prediction")
+
+DatasetDriftMetric
+
+DatasetMissingValuesMetric
+
+RegressionQualityMetric
+
+ColumnQuantileMetric(Median of employee experience in dataset)
+
+Now we shall observe simillar metrics in Grafana dashboard.
+
+Here we have "mock" split our employee data in to 4 month parts in 2024: 
+
+Jan Feb March and April.
+
+So that we can observe metrics chages over these 4 months in dashboard.
+
+Instruction to observe monitoring dashboard:
+Please run
+```bash
+docker-compose up
+```
+It will start postgres db to store our metrics.
+It will also start Grafana ui at http://localhost:3000/
+
+
+You can observer pre-made metrics dashboard.
+Or run [evidently_metrics.py](./monitoring/evidently_metrics.py)
+This script will populate metrics data in postgres db.
+We can add postgres db as datasouce and create dashboard from postgres data.
+
+        time         |  prediction_drift  | num_drifted_columns | share_missing_values | median_experience |        rmse
+---------------------+--------------------+---------------------+----------------------+-------------------+--------------------
+ 2024-01-01 00:00:00 | 0.8398708501969149 |                   1 |                    0 |                 8 | 22892.770295572125
+ 2024-02-01 00:00:00 | 0.8933338427537486 |                   1 |                    0 |              10.5 | 26598.315880818354
+ 2024-03-01 00:00:00 | 0.2853697742641565 |                   0 |                    0 |                 9 | 23442.389799655462
+ 2024-04-01 00:00:00 | 0.7783973524742297 |                   0 |                    0 |                11 | 26836.565137309874
 (4 rows)
+
+
 
 
 
