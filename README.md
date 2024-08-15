@@ -129,17 +129,18 @@ This script will populate metrics data in postgres db.
 
 Make sure you forward port 3000 (Grafana) and 5432 (Postgres) so they are both accesible
 
-Important limitation note: 
+__Important limitation note:__ 
 
-Ideally postgres should be simply accesible via localhost.
+__Ideally postgres should be simply accesible via localhost.__
 
-However we could not make it work for now.
-So we use host public ip / fqdn.
+__However we could not make it work for now.__
+__So we use host public ip / fqdn.__
 
-Hence please replace right public host ip (or fqdn) at this line: 
-[line in grafana_datasources.yaml to replace postgres host](./monitoring/config/grafana_datasources.yaml/#L21)
+__Hence please replace right public host ip (or fqdn) at this line:__ 
+__[line in grafana_datasources.yaml to replace postgres host](./monitoring/config/grafana_datasources.yaml/#L21)__
 
-And restart grafana service to reflect these changes
+__And restart grafana service to reflect these changes__
+
 ```bash
 docker-compose restart grafana
 ```
