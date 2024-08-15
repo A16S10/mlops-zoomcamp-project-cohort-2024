@@ -1,6 +1,6 @@
 # mlops-zoomcamp-project-cohort-2024
-## 📝 Description
-This is my DataTalksClub MlOps zoomcamp project repo. 
+## Description
+This is my final project repo for  [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp/). 
 
 It uses simple employee dataset from IT industry (presumably from India) and tries to predict salary. 
 Prediction is mainly based on position & experience.
@@ -88,6 +88,9 @@ Here we monitor key performance metrics of our employee salary predictionusing `
 including prediction drift, rmse and median employee experince . The results are visualized through `Grafana`.
 
 Switch to folder [monitoring](./monitoring)
+It has foll. 2 main parts
+
+### 1. Observing Evidently metrics via jupyter notebook 
 Here we have [baseline_model_employee_salary_data.ipynb](./monitoring/baseline_model_employee_salary_data.ipynb) 
 
 It will log the following Evidently metrics inline in the notebook
@@ -102,7 +105,10 @@ RegressionQualityMetric
 
 ColumnQuantileMetric(Median of employee experience in dataset)
 
-Now we shall observe simillar metrics in Grafana dashboard.
+Ex:
+![evidently-column-prediction.png](./pictures/evidently-column-prediction.png)
+
+### 2. Monitoring Evidently metrics in Grafana dashboard"" 
 
 Here we have "mock" split our employee data in to 4 month parts in 2024: 
 
@@ -110,27 +116,37 @@ Jan Feb March and April.
 
 So that we can observe metrics chages over these 4 months in dashboard.
 
-Instruction to observe monitoring dashboard:
-Please run
+#### Instructions to observe monitoring dashboard:
+
 ```bash
 docker-compose up
 ```
 It will start postgres db to store our metrics.
 It will also start Grafana ui at http://localhost:3000/
 
-
-You can observer pre-made metrics dashboard.
-Or run [evidently_metrics.py](./monitoring/evidently_metrics.py)
+run [evidently_metrics.py](./monitoring/evidently_metrics.py)
 This script will populate metrics data in postgres db.
-We can add postgres db as datasouce and create dashboard from postgres data.
 
-        time         |  prediction_drift  | num_drifted_columns | share_missing_values | median_experience |        rmse
----------------------+--------------------+---------------------+----------------------+-------------------+--------------------
- 2024-01-01 00:00:00 | 0.8398708501969149 |                   1 |                    0 |                 8 | 22892.770295572125
- 2024-02-01 00:00:00 | 0.8933338427537486 |                   1 |                    0 |              10.5 | 26598.315880818354
- 2024-03-01 00:00:00 | 0.2853697742641565 |                   0 |                    0 |                 9 | 23442.389799655462
- 2024-04-01 00:00:00 | 0.7783973524742297 |                   0 |                    0 |                11 | 26836.565137309874
-(4 rows)
+Make sure you forward port 3000 (Grafana) and 5432 (Postgres) so they are both accesible
+
+Important limitation note: 
+
+Ideally postgres should be simply accesible via localhost.
+
+However we could not make it work for now.
+So we use host public ip / fqdn.
+
+Hence please replace right public host ip (or fqdn) at this line: 
+[line in grafana_datasources.yaml to replace postgres host](./monitoring/config/grafana_datasources.yaml/#L21)
+
+And restart grafana service to reflect these changes
+```bash
+docker-compose restart grafana
+```
+Login to Grafana http://localhost:3000/
+
+Open the Dashboard titled 'Evidently AI data' 
+![grafana-2.png](./pictures/grafana-2.png)
 
 
 
