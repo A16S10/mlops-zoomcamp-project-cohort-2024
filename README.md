@@ -19,13 +19,13 @@ Switch to folder [experiment_tracking](./experiment_tracking)
 It has some pre-run experiments. you can simply observe them.
 
 Or You can run these experiments via foll. python scripts. 
-### 1. Simple single 'RandomForestRegressor' experiment 
+### 2.1. Simple single 'RandomForestRegressor' experiment 
 Run train.py
 ![single-expt.png](./pictures/single-expt.png)
-### 2. Multiple experiments with hyperopt parameter tuning 
+### 2.2. Multiple experiments with hyperopt parameter tuning 
 Run hpo.py
 ![random-forest-hyperopt.png](./pictures/random-forest-hyperopt.png)
-### 3. Register best model with the lowest test RMSE in model registry  
+### 2.3. Register best model with the lowest test RMSE in model registry  
 Run register_model.py
 ![best-model-expt.png](./pictures/best-model-expt.png)
 ![best-model-registered.png](./pictures/best-model-registered.png)
@@ -34,11 +34,11 @@ Run register_model.py
 Pipeline code is in folder [model_training_pipeline](./model_training_pipeline)
 
 Here we use `mage` to set pipeline with foll. stages
-### 1. ingest (Data loader)
+### 3.1. ingest (Data loader)
 Read employee data csv file
-### 2. train_lr (Transformer)
+### 3.2. train_lr (Transformer)
 Train linear regression model to predict salary 
-### 3. save_to_mlflow (Data exporter)
+### 3.3. save_to_mlflow (Data exporter)
 Save model as mlflow artifact
 
 ![mage.png](./pictures/mage.png)
@@ -90,25 +90,25 @@ including prediction drift, rmse and median employee experince . The results are
 Switch to folder [monitoring](./monitoring)
 It has foll. 2 main parts
 
-### 1. Observing Evidently metrics via jupyter notebook 
+### 5.1. Observing Evidently metrics via jupyter notebook 
 Here we have [baseline_model_employee_salary_data.ipynb](./monitoring/baseline_model_employee_salary_data.ipynb) 
 
 It will log the following Evidently metrics inline in the notebook
 
 ColumnDriftMetric(For column "prediction")
 
-DatasetDriftMetric
+__DatasetDriftMetric__
 
-DatasetMissingValuesMetric
+__DatasetMissingValuesMetric__
 
-RegressionQualityMetric
+__RegressionQualityMetric__
 
-ColumnQuantileMetric(Median of employee experience in dataset)
+__ColumnQuantileMetric(Median of employee experience in dataset)__
 
 Ex:
 ![evidently-column-prediction.png](./pictures/evidently-column-prediction.png)
 
-### 2. Monitoring Evidently metrics in Grafana dashboard"" 
+### 5.2. Monitoring Evidently metrics in Grafana dashboard"" 
 
 Here we have "mock" split our employee data in to 4 month parts in 2024: 
 
@@ -150,7 +150,14 @@ Open the Dashboard titled 'Evidently AI data'
 ![grafana-2.png](./pictures/grafana-2.png)
 
 
+## Further improvements:
+Use cloud: Implement IAC on AWS via Terraform
 
+Use CI/CD
+
+Better user experience to use model via web service. Try BYOM platforms like Hugging Face spaces / AWS Sagemaker etc
+
+Create unit tests
 
 
 
