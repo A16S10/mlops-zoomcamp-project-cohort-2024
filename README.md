@@ -43,7 +43,21 @@ Save model as mlflow artifact
 
 ![mage.png](./pictures/mage.png)
 
-## 4. Deploy batch model via docker
+## 4. Deploy salary prediction model
+### 4.1 Deploy model on `huggingface` as web service
+
+We have deployed model on huggingface spaces as a `gradio` webservice
+
+Steps to use:
+
+connect to webservice here: https://huggingface.co/spaces/nilart/mlops-zoomcamp-project-cohort-2024
+
+you can upload employee data to be predicted in this format: [test1.csv](./deploy_model/test1.csv) 
+
+Observe salary prediction
+![hugging-face.png](./pictures/hugging-face.png)
+
+### 4.2 Deploy batch model via docker
 This is a docker image.
 
 It takes input: location of file which has Gender,Experience (Years),Position (Keep this file in local dir)
@@ -75,13 +89,6 @@ docker run -v $(pwd)/test1.csv:/app/test1.csv ghcr.io/nilarte/simple_salary_pred
 ```
 
 ![deploy-model.png](./pictures/deploy-model.png)
-
-### Pending / To Do:
-Write simpler shell using docker-compose file. 
-It will handle volume mount to input file.
-So user can run simpler command.
-
-Try webservice deployment
 
 ## 5. Monitoring
 Here we monitor key performance metrics of our employee salary predictionusing `Evidently`, 
@@ -151,13 +158,13 @@ Open the Dashboard titled 'Evidently AI data'
 
 
 ## Further improvements:
-Use cloud: Implement IAC on AWS via Terraform
+Use more extensive dataset, current one is with 400 rows.
 
-Use CI/CD
+Use cloud: Implement IAC on AWS via Terraform.
 
-Better user experience to use model via web service. Try BYOM platforms like Hugging Face spaces / AWS Sagemaker etc
+Use CI/CD.
 
-Create unit tests
+Create unit tests.
 
 
 
