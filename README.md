@@ -23,6 +23,7 @@ you can simply observe them by running
 ```bash
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
+Make sure you forward port 5000 and access http://localhost:5000
 
 Or You can run these experiments via foll. python scripts. 
 ### 2.1. Simple single 'RandomForestRegressor' experiment 
