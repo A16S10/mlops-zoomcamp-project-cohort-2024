@@ -14,9 +14,15 @@ Here are more details about all the submission topics
 It will parse [employee_data.csv](./employee_data.csv) via `pandas` and use Linear Regression model from `scikit-learn`.
 It will also plot simple histogram of salary distribution using `matplotlib`.
 
-## 2. Experiment Tracking via mlflow
+## 2. Experiment Tracking via `mlflow`
 Switch to folder [experiment_tracking](./experiment_tracking)
-It has some pre-run experiments. you can simply observe them.
+
+It has some pre-run experiments in [mlflow.db](./experiment_tracking/mlflow.db). 
+
+you can simply observe them by running
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow.db
+```
 
 Or You can run these experiments via foll. python scripts. 
 ### 2.1. Simple single 'RandomForestRegressor' experiment 
@@ -33,7 +39,7 @@ Run [register_model.py](./experiment_tracking/register_model.py)
 ![best-model-expt.png](./pictures/best-model-expt.png)
 ![best-model-registered.png](./pictures/best-model-registered.png)
 
-## 3. Pipeline orchestration via mage
+## 3. Pipeline orchestration via `mage`
 Pipeline code is in folder [model_training_pipeline](./model_training_pipeline)
 
 Here we use `mage` to set pipeline with foll. stages
