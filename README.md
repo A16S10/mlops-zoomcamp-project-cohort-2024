@@ -20,13 +20,16 @@ It has some pre-run experiments. you can simply observe them.
 
 Or You can run these experiments via foll. python scripts. 
 ### 2.1. Simple single 'RandomForestRegressor' experiment 
-Run train.py
+Run [train.py](./experiment_tracking/train.py)
+
 ![single-expt.png](./pictures/single-expt.png)
 ### 2.2. Multiple experiments with hyperopt parameter tuning 
-Run hpo.py
+Run [hpo.py](./experiment_tracking/hpo.py)
+
 ![random-forest-hyperopt.png](./pictures/random-forest-hyperopt.png)
 ### 2.3. Register best model with the lowest test RMSE in model registry  
-Run register_model.py
+Run [register_model.py](./experiment_tracking/register_model.py)
+
 ![best-model-expt.png](./pictures/best-model-expt.png)
 ![best-model-registered.png](./pictures/best-model-registered.png)
 
