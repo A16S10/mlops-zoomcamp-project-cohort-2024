@@ -56,7 +56,9 @@ Save model as mlflow artifact
 ## 4. Deploy salary prediction model
 ### 4.1 Deploy model on `huggingface` as web service
 
-We have deployed model on huggingface spaces as a `gradio` webservice
+We have deployed model on huggingface spaces as a `gradio` webservice.
+
+Here is the app.py and requirements.txt file same as on huggingface: [app.py](./deploy_model/app.py) [requirements.txt](./deploy_model/requirements.txt)
 
 Steps to use:
 
