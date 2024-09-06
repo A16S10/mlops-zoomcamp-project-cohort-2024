@@ -1,5 +1,4 @@
+gradio
 pandas
 numpy
-scikit-learn
-gradio
-
+scikit-learn==1.2.2

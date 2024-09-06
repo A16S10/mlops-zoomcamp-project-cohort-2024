@@ -2,6 +2,7 @@ import gradio as gr
 import pandas as pd
 import pickle
 import numpy as np
+import distutils.util 
 
 # Load the model
 with open('./models/lin_reg.bin', 'rb') as file:
@@ -39,5 +40,5 @@ iface = gr.Interface(
     description="Upload employee data to predict salaries using a pre-trained linear regression model."
 )
 
-iface.launch()
+iface.launch(server_name="0.0.0.0", server_port=7861)
 
