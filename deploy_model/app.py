@@ -2,6 +2,8 @@ import gradio as gr
 import pandas as pd
 import pickle
 import numpy as np
+from flask import Flask, jsonify
+from threading import Thread
 import distutils.util 
 
 
@@ -36,6 +38,8 @@ def predict_salary(input_file):
 
     return df_result, std_dev, mean_salary
 
+
+
 # Gradio Interface
 iface = gr.Interface(
     fn=predict_salary,
@@ -49,8 +53,26 @@ iface = gr.Interface(
     description="Upload employee data to predict salaries using a pre-trained linear regression model."
 )
 
+# Create Flask app for health check
+flask_app = Flask(__name__)
+
+@flask_app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({'status': 'healthy'}), 200
+
+def start_flask_app():
+    print("Starting Flask app for health check on port 5001")
+    flask_app.run(host='0.0.0.0', port=5001)
+
+
+
+# Start Flask app in a separate thread
+flask_thread = Thread(target=start_flask_app)
+flask_thread.start()
+
+
 try:
-    iface.launch(server_name="0.0.0.0", server_port=7861)
+    iface.launch(server_name="0.0.0.0", server_port=8080)
 except Exception as e:
     logger.error(f"An error occurred: {e}")
 

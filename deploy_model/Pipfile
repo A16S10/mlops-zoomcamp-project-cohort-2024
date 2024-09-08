@@ -10,6 +10,8 @@ pandas = "*"
 pyarrow = "*"
 s3fs = "*"
 gradio = "*"
+flask = ">=2.0" 
+
 
 [dev-packages]
 

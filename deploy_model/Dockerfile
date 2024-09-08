@@ -12,4 +12,6 @@ RUN pipenv install --system --deploy
 
 COPY [ "app.py", "app.py" ]
 
+EXPOSE 8080
+
 ENTRYPOINT [ "python", "app.py" ]
