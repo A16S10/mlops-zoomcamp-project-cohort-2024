@@ -4,6 +4,15 @@ import pickle
 import numpy as np
 import distutils.util 
 
+
+import logging
+import sys
+
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
+logger = logging.getLogger()
+
+logger.info("This is a log message")
+
 # Load the model
 with open('./models/lin_reg.bin', 'rb') as file:
     dv, lr = pickle.load(file)
@@ -40,5 +49,11 @@ iface = gr.Interface(
     description="Upload employee data to predict salaries using a pre-trained linear regression model."
 )
 
-iface.launch(server_name="0.0.0.0", server_port=7861)
+try:
+    iface.launch(server_name="0.0.0.0", server_port=7861)
+except Exception as e:
+    logger.error(f"An error occurred: {e}")
+
+
+
 
