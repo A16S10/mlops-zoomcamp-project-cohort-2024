@@ -1,17 +1,20 @@
 FROM python:3.11.7-slim
 
-WORKDIR /app
+# Set working directory
+WORKDIR /opt/ml/code
 
-COPY [ "models", "models" ]
+# Copy the model and app.py file
+COPY app.py /opt/ml/code/app.py
+COPY models/lin_reg.bin /opt/ml/model/lin_reg.bin
 
-RUN pip install pipenv
 
-COPY [ "Pipfile", "Pipfile.lock", "./" ]
+# Install necessary libraries
+RUN pip install pandas scikit-learn gradio flask numpy pyarrow s3fs 
 
-RUN pipenv install --system --deploy
+# Expose the Gradio and Flask ports
+EXPOSE 8080 8081
 
-COPY [ "app.py", "app.py" ]
+# Run the Gradio app (this includes Flask in a separate thread)
 
-EXPOSE 8080
-
-ENTRYPOINT [ "python", "app.py" ]
+ENTRYPOINT ["python", "/opt/ml/code/app.py"]
+CMD ["serve"] 

@@ -62,7 +62,7 @@ def health_check():
 
 def start_flask_app():
     print("Starting Flask app for health check on port 5001")
-    flask_app.run(host='0.0.0.0', port=5001)
+    flask_app.run(host='0.0.0.0', port=8080)
 
 
 
@@ -72,7 +72,7 @@ flask_thread.start()
 
 
 try:
-    iface.launch(server_name="0.0.0.0", server_port=8080)
+    iface.launch(server_name="0.0.0.0", server_port=8081)
 except Exception as e:
     logger.error(f"An error occurred: {e}")
 
