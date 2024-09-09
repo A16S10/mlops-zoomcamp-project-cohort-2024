@@ -16,7 +16,7 @@ logger = logging.getLogger()
 logger.info("This is a log message")
 
 # Load the model
-with open('./models/lin_reg.bin', 'rb') as file:
+with open('/opt/ml/model/lin_reg.bin', 'rb') as file:
     dv, lr = pickle.load(file)
 
 def predict_salary(input_file):
@@ -56,8 +56,8 @@ iface = gr.Interface(
 # Create Flask app for health check
 flask_app = Flask(__name__)
 
-@flask_app.route('/health', methods=['GET'])
-def health_check():
+@flask_app.route('/ping', methods=['GET'])
+def ping():
     return jsonify({'status': 'healthy'}), 200
 
 def start_flask_app():
