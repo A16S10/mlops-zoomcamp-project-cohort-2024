@@ -7,7 +7,7 @@ from threading import Thread
 import distutils.util 
 
 
-import logging
+import logging 
 import sys
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
@@ -16,7 +16,7 @@ logger = logging.getLogger()
 logger.info("This is a log message")
 
 # Load the model
-with open('/opt/ml/model/lin_reg.bin', 'rb') as file:
+with open('deploy_model/models/lin_reg.bin', 'rb') as file:
     dv, lr = pickle.load(file)
 
 def predict_salary(input_file):
