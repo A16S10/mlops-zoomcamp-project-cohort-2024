@@ -6,6 +6,7 @@ from sklearn.metrics import mean_absolute_error
 import joblib
 import pandas as pd
 import logging
+from sklearn.preprocessing import StandardScaler
 
 
 # Set up logging
@@ -62,8 +63,14 @@ if __name__ == '__main__':
     label = train_df.columns[-1]
 
     print("Building training and testing datasets")
+    scaler=StandardScaler()
+    
     X_train = train_df[features]
+    X_train=scaler.fit_transform(X_train)
+
     X_test = test_df[features]
+    X_test=scaler.transform(X_test)
+    
     y_train = train_df[label]
     y_test = test_df[label]
 
