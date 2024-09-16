@@ -29,10 +29,7 @@ if __name__ == '__main__':
     parser.add_argument('--model-dir', type=str, default=os.environ.get('SM_MODEL_DIR'))
     args, _ = parser.parse_known_args()
 
-    # Assuming you already have a trained model object `model`
-    # Replace this with your actual trained model object.
-    # model = joblib.load("path/to/your/trained/model.joblib")  # Load your existing trained model
-
+    
     # Save the model to the specified model directory
     model_path = os.path.join(args.model_dir, "model.joblib")
     joblib.dump(model, model_path)

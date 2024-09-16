@@ -12,7 +12,7 @@ scaler = StandardScaler()
 
 # Set up the SageMaker session and predictor
 sagemaker_session = Session()
-endpoint_name = "Custom-sklearn-model2024-09-15-14-18-31" 
+endpoint_name = "Custom-sklearn-model2024-09-16-05-51-50" 
 predictor = SKLearnPredictor(endpoint_name=endpoint_name, sagemaker_session=sagemaker_session)
 
 # The predict_salary function that processes the CSV file and predicts salaries
@@ -53,7 +53,7 @@ def predict_salary(csvfile):
     return df
 
 
-
+#creating gradio interface
 
 iface = gr.Interface(
     fn=predict_salary,

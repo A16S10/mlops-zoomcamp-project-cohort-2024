@@ -42,6 +42,9 @@ if __name__ == '__main__':
     print("[INFO] Extracting arguments")
     parser = argparse.ArgumentParser()
 
+
+
+
     # input data and model directories
     parser.add_argument('--model-dir', type=str, default=os.environ['SM_MODEL_DIR'])
     parser.add_argument('--train', type=str, default=os.environ['SM_CHANNEL_TRAIN'])
